@@ -1,3 +1,25 @@
+## 新版推荐系统：CineMatch
+
+> [!IMPORTANT]
+> 本项目已在独立仓库中完成现代化重写：**[CineMatch — Movie Recommendation System](https://github.com/CodeRayZhang/cinematch-recommender)**。
+> 新版围绕电影发现、个性化推荐和私人片单持续完善。希望体验新版页面、运行系统或继续开发，请前往新版仓库。
+>
+> **访问说明：新版仓库目前为私有仓库，需要获得访问权限；未获授权时，GitHub 可能显示 404。**
+
+新版主要能力：
+
+- **可训练的混合推荐**：实现 ALS-WR 矩阵分解，结合内容偏好、邻域协同与口碑评分，并进行多样性重排；支持模型训练、启用、版本回退及导出。
+- **推荐实验室**：展示观影偏好、模型状态和逐片推荐理由，提供评分引导、精选 / 探索模式、换一组及隐藏反馈。
+- **完整观影流程**：电影搜索与组合筛选、详情与相似电影、个人中心、评分短评、想看 / 看过、自定义片单及管理后台。
+- **现代技术栈**：Vue 3 + TypeScript + Vite、Spring Boot 4 + Java 21，配套 Spring Security、MyBatis、Flyway；支持 H2 本地运行和 MySQL / Docker Compose 部署。
+- **数据与文档**：仓库附带 923 部电影资料和本地海报，提供部署步骤、MovieLens 数据准备与模型训练指南、算法评估及答辩材料。
+
+**新版文档：** [部署与运行](https://github.com/CodeRayZhang/cinematch-recommender/blob/main/docs/deployment.md) · [模型训练](https://github.com/CodeRayZhang/cinematch-recommender/blob/main/docs/recommendation-models.md) · [算法介绍](https://github.com/CodeRayZhang/cinematch-recommender/blob/main/docs/recommendation.md) · [推荐效果评估](https://github.com/CodeRayZhang/cinematch-recommender/blob/main/docs/recommendation-model-evaluation.md) · [答辩 PPT 与讲稿](https://github.com/CodeRayZhang/cinematch-recommender/tree/main/docs/defense)
+
+本仓库保留原毕业设计代码、架构图和部署说明，以下内容仍对应旧版。CineMatch 使用独立代码仓库和数据库，可单独运行，无需启动旧版 Spark / Hadoop 组件；旧账号、历史评分和旧 ALS 模型不会自动迁移，新版模型需按训练指南重新训练并启用。
+
+---
+
 # 基于Spark的电影推荐系统
 
 本次项目是基于大数据过滤引擎的电影推荐系统--“懂你”电影网站，包含了爬虫、电影网站（前端和后端）、后台管理系统以及推荐系统（Spark）。
