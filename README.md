@@ -3,8 +3,6 @@
 > [!IMPORTANT]
 > 本项目已在独立仓库中完成现代化重写：**[CineMatch — Movie Recommendation System](https://github.com/CodeRayZhang/cinematch-recommender)**。
 > 新版围绕电影发现、个性化推荐和私人片单持续完善。希望体验新版页面、运行系统或继续开发，请前往新版仓库。
->
-> **访问说明：新版仓库目前为私有仓库，需要获得访问权限；未获授权时，GitHub 可能显示 404。**
 
 新版主要能力：
 
