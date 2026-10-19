@@ -332,11 +332,23 @@
   </update>
   <select id="selectBycategory" parameterType="com.dream.po.Selectquery" resultMap="BaseResultMap">
     <if test="category == 0">
-      select * from movie order by ${sort} desc
+      select * from movie order by
+      <choose>
+        <when test="sort == 'showyear'">showyear</when>
+        <when test="sort == 'averating'">averating</when>
+        <otherwise>numrating</otherwise>
+      </choose>
+      desc
       LIMIT #{molimit,jdbcType=INTEGER},20;
     </if>
     <if test="category != 0">
-    select * from movie m, moviecategory mc where m.movieid=mc.movieid and mc.categoryid = #{category,jdbcType=INTEGER} order by ${sort} desc
+    select * from movie m, moviecategory mc where m.movieid=mc.movieid and mc.categoryid = #{category,jdbcType=INTEGER} order by
+      <choose>
+        <when test="sort == 'showyear'">showyear</when>
+        <when test="sort == 'averating'">averating</when>
+        <otherwise>numrating</otherwise>
+      </choose>
+      desc
       LIMIT #{molimit,jdbcType=INTEGER},20;
     </if>
   </select>
