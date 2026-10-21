@@ -1,11 +1,11 @@
 > [!WARNING]
-> **历史学习项目，进入有限维护。** 原有依赖与部署方式较旧，不建议直接用于公网生产环境。后续功能开发转向 [CineMatch](https://github.com/CodeRayZhang/cinematch-recommender)。
+> **历史学习项目，进入有限维护。** 原有依赖与部署方式较旧，不建议直接用于公网生产环境。后续功能开发转向 [CineMatch](https://github.com/RayXBuilds/cinematch-recommender)。
 > 本仓库保留原始架构与学习资料，仅按可用时间处理明确问题；排序参数修补不代表已完成全面安全审计。旧演示地址已从本文移除，截图用于展示历史界面。
 
 ## 新版推荐系统：CineMatch
 
 > [!IMPORTANT]
-> 本项目已在独立仓库中完成现代化重写：**[CineMatch — Movie Recommendation System](https://github.com/CodeRayZhang/cinematch-recommender)**。
+> 本项目已在独立仓库中完成现代化重写：**[CineMatch — Movie Recommendation System](https://github.com/RayXBuilds/cinematch-recommender)**。
 > 新版围绕电影发现、个性化推荐和私人片单持续完善。希望体验新版页面、运行系统或继续开发，请前往新版仓库。
 
 新版主要能力：
@@ -16,7 +16,7 @@
 - **现代技术栈**：Vue 3 + TypeScript + Vite、Spring Boot 4 + Java 21，配套 Spring Security、MyBatis、Flyway；支持 H2 本地运行和 MySQL / Docker Compose 部署。
 - **数据与文档**：仓库附带 923 部电影资料和本地海报，提供部署步骤、MovieLens 数据准备与模型训练指南、算法评估及答辩材料。
 
-**新版文档：** [部署与运行](https://github.com/CodeRayZhang/cinematch-recommender/blob/main/docs/deployment.md) · [模型训练](https://github.com/CodeRayZhang/cinematch-recommender/blob/main/docs/recommendation-models.md) · [算法介绍](https://github.com/CodeRayZhang/cinematch-recommender/blob/main/docs/recommendation.md) · [推荐效果评估](https://github.com/CodeRayZhang/cinematch-recommender/blob/main/docs/recommendation-model-evaluation.md) · [答辩 PPT 与讲稿](https://github.com/CodeRayZhang/cinematch-recommender/tree/main/docs/defense)
+**新版文档：** [部署与运行](https://github.com/RayXBuilds/cinematch-recommender/blob/main/docs/deployment.md) · [模型训练](https://github.com/RayXBuilds/cinematch-recommender/blob/main/docs/recommendation-models.md) · [算法介绍](https://github.com/RayXBuilds/cinematch-recommender/blob/main/docs/recommendation.md) · [推荐效果评估](https://github.com/RayXBuilds/cinematch-recommender/blob/main/docs/recommendation-model-evaluation.md) · [答辩 PPT 与讲稿](https://github.com/RayXBuilds/cinematch-recommender/tree/main/docs/defense)
 
 本仓库保留原毕业设计代码、架构图和部署说明，以下内容仍对应旧版。CineMatch 使用独立代码仓库和数据库，可单独运行，无需启动旧版 Spark / Hadoop 组件；旧账号、历史评分和旧 ALS 模型不会自动迁移，新版模型需按训练指南重新训练并启用。
 
